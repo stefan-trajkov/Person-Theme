@@ -1,8 +1,8 @@
 baseurl: "/"
-title: "My awesome list"
+title: "Person"
 
 params:
-  logo: 'My awesome list'
+  logo: 'Person'
 
 sass:
   input_file: sass/main.scss
