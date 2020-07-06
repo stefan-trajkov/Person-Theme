@@ -1,7 +1,7 @@
 {
-  "name": "my-awesome-list",
+  "name": "person",
   "version": "1.0.3",
-  "description": "A starter theme for create a list using stackbit",
+  "description": "A starter theme using stackbit",
   "main": "public/index.html",
   "scripts": {
     "build": "unibit build",
@@ -11,16 +11,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tunguskha/my-awesome-list"
+    "url": "git+https://github.com/"
   },
-  "author": "Fabien 'tungu' Dutaud",
+  "author": "Stefan 'trajkov'",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tunguskha/my-awesome-list/issues"
+    "url": "https://github.com/
   },
-  "homepage": "https://github.com/tunguskha/my-awesome-list",
+  "homepage": "https://github.com/,
   "dependencies": {
-    "@stackbit/unibit": "~0.1.20",
-    "nodemon": "^1.19.1"
+    "@stackbit/unibit": "^0.1.22",
+    "nodemon": "^1.19.4"
   }
 }

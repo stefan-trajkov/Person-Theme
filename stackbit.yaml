@@ -6,7 +6,7 @@ dataDir: data
 uploadDir: images
 pagesDir: content
 metadata:
-  title: My awesome list
+  title: Person
   description: A starter theme for create a list using stackbit
   author: Fabien 'tungu' Dutaud
   authorURL: 'https://tungu.me'
