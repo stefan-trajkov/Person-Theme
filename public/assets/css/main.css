@@ -736,3 +736,9 @@ footer {
         -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
         background-color: rgba(255, 255, 255, 0.7); } }
+
+.title {
+    line-height: 1.2;
+    font-size: 2em;
+    font-weight: bold; }
+}
