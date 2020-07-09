@@ -1,0 +1,38 @@
+{% set section = include_dict.section %}
+<section id="{{ section.section_id }}" class="block features-block bg-{{ section.background }} outer">
+  <div class="block-header inner-small">
+    {% if section.title %}
+    <h2 class="block-title">{{ section.title }}</h2>
+    {% endif %}
+    {% if section.subtitle %}
+    <p class="block-subtitle">
+      {{ section.subtitle | safe }}
+    </p>
+    {% endif %}
+  </div><!-- .block-header -->
+  {% if section.features %}
+  <div class="inner">
+    {% for feature in section.features %}
+    <div class="block-item">
+      <div class="grid">
+        {% if feature.image %}
+        <div class="cell block-preview">
+          <img src="{{ feature.image | relative_url }}" alt="{{ feature.title }}" />
+        </div><!-- .block-preview -->
+        {% endif %}
+        <div class="cell block-content">
+          <h3 class="block-title underline">{{ feature.title }}</h3>
+          <div class="block-copy">
+            {{ feature.content | markdownify }}
+          </div>
+          {% if feature.actions %}
+            {% set include_dict = {'actions': feature.actions} %}
+            {% include "cta_buttons.html" %}
+          {% endif %}
+        </div><!-- .block-content -->
+      </div><!-- .grid -->
+    </div><!-- .block-item -->
+    {% endfor %}
+    </div><!-- .inner -->
+  {% endif %}
+</section><!-- .block -->
