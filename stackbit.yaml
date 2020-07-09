@@ -7,9 +7,9 @@ uploadDir: images
 pagesDir: content
 metadata:
   title: Person
-  description: A starter theme for create a list using stackbit
+  description: Full-Stack web development
   author: Fabien 'tungu' Dutaud
-  authorURL: 'https://tungu.me'
+  authorURL: 'https://stefantrajkov.com'
   images:
     small: images/myAwesomeList-256x192.png
     large: images/myAwesomeList-1024x768.png
@@ -73,7 +73,5 @@ models:
               required: true
 stackbit_banner:
   show_banner: false
-  name: my-awesome-list
-  create_url: 'https://app.stackbit.com/create?theme=my-awesome-list'
-  github_url: 'https://github.com/tunguskha/my-awesome-list'
+  name: person
 staticDir: static

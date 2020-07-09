@@ -26,20 +26,6 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur autem.",
       "link": "Visit website",
       "linkUrl": "#!"
-    },
-    {
-      "image": "images/5.jpg",
-      "title": "Another one.",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur autem.",
-      "link": "Visit website",
-      "linkUrl": "#!"
-    },
-    {
-      "image": "images/6.jpg",
-      "title": "Another one.",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur autem.",
-      "link": "Visit website",
-      "linkUrl": "#!"
     }
   ]
 }

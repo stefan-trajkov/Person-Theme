@@ -1,5 +1,5 @@
 ---
 layout: home
 title: homepage
-description: Person - Let me change the text.
+description: Full-Stack web developer
 ---
