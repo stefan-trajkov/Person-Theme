@@ -102,7 +102,7 @@ input#search {
     background: white;
     border-radius: 15em;
     position: absolute;
-    top: 2.5em;
+    top: 0em;
     left: 0;
     right: 0;
     z-index: 3;
@@ -286,7 +286,8 @@ section:nth-child(even) {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	background-color: #ccc;
+    background-color: #ccc;
+    content: url(https://ca.slack-edge.com/T02636XJK-US60CUZAR-0aa981b446f1-512);
 }
 
 
@@ -345,7 +346,7 @@ aside {
 	padding: 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 20px;
+    grid-gap: 20px;
 }
 .skill-list .skill {
 	background-color: #fff;
@@ -353,7 +354,8 @@ aside {
 	border-radius: 15px;
 	display: grid;
 	grid-template-columns: auto 1fr;
-	grid-gap: 20px;
+    grid-gap: 20px;
+    width: 350px
 }
 
 
@@ -382,4 +384,35 @@ aside {
 		grid-template-columns: 1fr;
 	}
 	
+}
+
+.cardstitle {
+    font-size: 26px;
+	line-height: 1;
+    position: relative;
+    padding-top: 70px;
+    padding-left: 45px;
+}
+
+.cardstitle:after{
+	content: "";
+	width: 35px;
+	height: 3px;
+	background-color: green;
+	position: absolute;
+	bottom: -5px;
+    left: 45px;
+}
+
+@media screen and (max-width: 808px) {	
+.banner .container {
+    display: block;
+}}
+
+.row .col.m6 {
+    width: 50%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    margin-top: 100px;
 }
