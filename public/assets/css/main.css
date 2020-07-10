@@ -736,3 +736,130 @@ footer {
         -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
         background-color: rgba(255, 255, 255, 0.7); } }
+
+section:nth-child(even) {
+    background-color: #F5F8F9; }
+
+.section-title {
+    font-size: 26px;
+    line-height: 1;
+    margin-bottom: 20px;
+    position: relative;
+    color: #000; }
+
+.section-title:after {
+    content: "";
+    width: 35px;
+    height: 3px;
+    background-color: green;
+    position: absolute;
+    bottom: -5px;
+    left: 0; }
+
+.summary {
+    padding: 45px;
+    color: #555; }
+
+.skills {
+    padding: 45px; }
+
+.banner {
+    min-height: 60vh;
+    display: flex;
+    align-items: center; }
+
+.banner .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    padding: 0 20px; }
+
+.banner-img {
+    justify-self: center;
+    align-self: center;
+    padding: 40px; }
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ccc; }
+
+.hello {
+    background-color: green;
+    display: inline-block;
+    padding: 5px 15px;
+    line-height: 1;
+    border-radius: 15px;
+    color: #fff; }
+
+.banner-info .name {
+    font-family: serif;
+    font-weight: 600;
+    line-height: 1;
+    margin: 10px 0 20px;
+    font-size: 56px; }
+
+.banner-info .title {
+    font-size: 22px;
+    margin-bottom: 20px; }
+
+.banner-info .top-skills {
+    list-style: none;
+    padding: 0;
+    max-width: 400px; }
+
+.banner-info .top-skills .top-skill {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 0 5px 10px 0;
+    color: #555; }
+
+.resume .container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-gap: 20px; }
+
+aside, main {
+    background-color: #fff;
+    border-radius: 20px; }
+
+aside {
+    padding: 20px; }
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; }
+
+.skill-list .skill {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px; }
+
+.skill-list .skill-title {
+    font-size: 20px;
+    color: #000; }
+
+.skill-list .skill-desc {
+    margin-bottom: 0;
+    color: #555; }
+
+@media screen and (max-width: 808px) {
+    aside {
+        display: none; }
+    .resume .container {
+        grid-template-columns: 1fr;
+        min-width: 96%; } }
+
+@media screen and (max-width: 768px) {
+    .skill-list {
+        grid-template-columns: 1fr; } }

@@ -77,3 +77,44 @@ searchIcon.addEventListener("click", event => {
 
   event.preventDefault;
 });
+
+var skills = [
+	{
+		skillTitle: "Web Design",
+		skillDesc: "Create the front-end for websites using HTML, CSS, Javascript & Bootstrap",
+		skillIcon: "ravelry"
+	},
+	{
+		skillTitle: "SEO",
+		skillDesc: "Create the front-end for websites using HTML, CSS, Javascript & Bootstrap",
+		skillIcon: "ravelry"
+	},
+	{
+		skillTitle: "Content Writing",
+		skillDesc: "Create the front-end for websites using HTML, CSS, Javascript & Bootstrap",
+		skillIcon: "ravelry"
+	}
+];
+
+skills.forEach(skill => {
+
+	var skillItem = document.createElement('li');
+	
+	skillItem.setAttribute('class', 'skill');
+	
+	skillItem.innerHTML = `
+		<div class="skill-icon">
+			<i class="fa fa-${skill.skillIcon}" aria-hidden="true"></i>
+		</div>
+		<div class="skill-info">
+			<h3 class="skill-title">${skill.skillTitle}</h3>
+			<p class="skill-desc">${skill.skillDesc}</p>
+		</div> 
+	`;
+	
+	var skillList = document.querySelector('.skill-list');
+	
+	skillList.appendChild(skillItem);
+	
+	
+});
