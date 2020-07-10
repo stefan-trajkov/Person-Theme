@@ -75,24 +75,3 @@ stackbit_banner:
   show_banner: false
   name: person
 staticDir: static
-
-  section_hero:
-    type: object
-    label: Features Section
-    extends:
-      - section
-    fields:
-      - type: string
-        name: subtitle
-        label: Subtitle
-        description: The subtitle of the section
-      - type: enum
-        name: background
-        label: Background
-        description: The background of the section
-      - type: list
-        name: hero
-        label: hero
-        items:
-          type: model
-          models: [hero_item]
